@@ -1,13 +1,28 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+:root {
+  --main-black-color: #363636;
+  --main-orange-color: #b87650;
+  --main-bg-color: #e3ead5;
+  --main-light-black: #656565;
+  --font-size-xl: 9.8rem;
+  --font-size-body: 1.125rem;
+  --font-size-heading: 3rem;
+  --font-size-nav-link: 1.5rem;
 }
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 html,
 body {
   height: 100%;
-}
-body {
   font-family: 'Exo 2', sans-serif;
-  background-color: #e3ead5;
+  background-color: var(--main-bg-color);
+}
+.main-container {
+  max-width: 1600px;
+  margin: 0 auto;
+  border: 1px solid black;
 }
