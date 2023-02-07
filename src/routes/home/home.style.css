@@ -4,6 +4,8 @@
 .home-component {
   /* background: red; */
   /* position: relative; */
+}
+.hero-container {
   padding-top: 110px;
   display: flex;
   flex-direction: column;
