@@ -23,5 +23,8 @@ body {
 .main-container {
   max-width: 1600px;
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+.highlight {
+  color: var(--main-orange-color) !important;
 }

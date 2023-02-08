@@ -1,14 +1,15 @@
 import './header.styles.css'
+import { FaGithub, FaTwitter } from 'react-icons/fa'
 
 const Header = () => {
   return (
     <div className='main-container header-container'>
       <div className='navigation'>
-        <a href='#' className='nav__link test'>
+        <a href='#' className='nav__link left'>
           work
         </a>
         <div className='nav__link_seperator'></div>
-        <a href='#' className='nav__link testa'>
+        <a href='#' className='nav__link right'>
           blog
         </a>
       </div>
@@ -21,6 +22,18 @@ const Header = () => {
             <div className='title-circle'></div>
           </span>
         </span>
+      </div>
+      <div className='header-quote-container'>
+        <div className='first'>
+          <span className='highlight'>Developer </span>on duty
+        </div>
+        <div className='second'>
+          love making <span className='highlight'>web apps</span>
+        </div>
+      </div>
+      <div className='socials-container'>
+        <FaTwitter />
+        <FaGithub />
       </div>
     </div>
   )
