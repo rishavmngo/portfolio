@@ -22,7 +22,7 @@
   overflow: hidden;
   position: relative;
 }
-.profile {
+.right .profile {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -30,6 +30,11 @@
   filter: sepia(5);
   overflow: hidden;
   position: relative;
+  transition: filter 3s linear;
+}
+
+.right .profile:hover {
+  filter: sepia(0);
 }
 
 @keyframes image {
