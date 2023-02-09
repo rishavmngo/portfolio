@@ -215,4 +215,7 @@
   .header-container {
     height: 60vh;
   }
+  .socials-container {
+    display: none;
+  }
 }

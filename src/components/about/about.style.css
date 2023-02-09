@@ -79,10 +79,14 @@
   }
 
   .about-content-grid .profile {
-    padding: 0 80px;
+    padding: 0 40px;
   }
   .about-content-grid-desp {
     padding-bottom: 40px;
     font-size: var(--font-size-body);
+    padding: 40px;
+  }
+  .section-heading {
+    margin-left: 40px;
   }
 }
