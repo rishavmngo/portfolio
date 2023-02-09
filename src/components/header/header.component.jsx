@@ -2,6 +2,10 @@ import './header.styles.css'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
 
 const Header = () => {
+  const openInNewTab = (url) => {
+    const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+    if (newWindow) newWindow.opener = null
+  }
   return (
     <div className='main-container header-container'>
       <div className='navigation'>
@@ -32,8 +36,12 @@ const Header = () => {
         </div>
       </div>
       <div className='socials-container'>
-        <FaTwitter />
-        <FaGithub />
+        <FaTwitter
+          onClick={() => openInNewTab('https://www.twitter.com/rishavmngo')}
+        />
+        <FaGithub
+          onClick={() => openInNewTab('https://www.github.com/rishavmngo')}
+        />
       </div>
     </div>
   )

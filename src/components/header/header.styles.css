@@ -199,7 +199,7 @@
   }
 
   .header-container {
-    height: 60vh;
+    height: 80vh;
   }
 }
 
@@ -213,9 +213,17 @@
     --main-title-circle-right: -14px;
   }
   .header-container {
-    height: 60vh;
+    height: 100vh;
   }
   .socials-container {
-    display: none;
+    position: absolute;
+    top: 80%;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    flex-direction: row;
+  }
+  .socials-container > * {
+    margin: 5px;
   }
 }
