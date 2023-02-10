@@ -21,6 +21,7 @@
 .right {
   overflow: hidden;
   position: relative;
+  border-radius: 8px;
 }
 .right .profile {
   height: 100%;

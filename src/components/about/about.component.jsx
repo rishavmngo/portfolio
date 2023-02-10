@@ -14,6 +14,8 @@ const About = () => {
             and few <span className='highlight'>command line tools</span>. I
             love exploring computers either software or underling hardware.
           </div>
+
+          <div></div>
         </div>
         <div className='right'>
           <img src={profileDp} className='profile' />
