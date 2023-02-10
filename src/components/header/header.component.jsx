@@ -1,13 +1,41 @@
 import './header.styles.css'
 import { FaGithub, FaTwitter } from 'react-icons/fa'
+import { useEffect, useRef } from 'react'
 
 const Header = () => {
   const openInNewTab = (url) => {
     const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
     if (newWindow) newWindow.opener = null
   }
+  const headerContainerRef = useRef()
+
+  useEffect(() => {
+    const container = headerContainerRef.current
+    container.onmousemove = (e) => {
+      const mouseX = e.clientX,
+        mouseY = e.clientY
+      const percentX = mouseX / container.offsetWidth,
+        percentY = mouseY / container.offsetHeight
+
+      // container.style.backgroundPosition = `${Math.floor(percentX * 100)}% ${Math.floor(percentY * 100)}%`
+
+      container.animate(
+        {
+          backgroundPosition: `${Math.floor(percentX * 100) / 10}% ${
+            Math.floor(percentY * 100) / 10
+          }%`,
+        },
+        {
+          duration: 4000,
+          fill: 'forwards',
+          easing: 'ease',
+        }
+      )
+    }
+  })
+
   return (
-    <div className='main-container header-container'>
+    <div className='main-container header-container' ref={headerContainerRef}>
       <div className='navigation'>
         <a href='#' className='nav__link left'>
           work

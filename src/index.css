@@ -19,6 +19,7 @@ body {
   height: 100%;
   font-family: 'Exo 2', sans-serif;
   background-color: var(--main-bg-color);
+  scroll-behavior: smooth;
 }
 .main-container {
   max-width: 1600px;
