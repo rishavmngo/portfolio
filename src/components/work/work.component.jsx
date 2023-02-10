@@ -6,7 +6,7 @@ const Work = () => {
   const gallery = useRef()
   const workContainer = useRef()
   useEffect(() => {
-    workContainer.current.onmousemove = (e) => {
+    workContainer.current.touchmove = (e) => {
       const mouseX = e.clientX,
         mouseY = e.clientY
       const xDecimal = mouseX / workContainer.current.offsetWidth,
@@ -36,7 +36,7 @@ const Work = () => {
       <div className='main-container work-container' ref={workContainer}>
         <div id='gallery' ref={gallery}>
           {images.map((imageItem) => (
-            <Tile tile={imageItem} />
+            <Tile key={imageItem.id} tile={imageItem} />
           ))}
         </div>
       </div>

@@ -31,11 +31,13 @@
 }
 
 .tile-title {
-  font-size: var(--font-size-heading);
+  /* font-size: var(--font-size-heading); */
+  font-size: 4vh;
   color: white;
 }
 .tile-desp {
   margin-top: 10px;
-  font-size: var(--font-size-body);
+  /* font-size: var(--font-size-body); */
+  font-size: 2vh;
   color: var(--main-black-color);
 }
