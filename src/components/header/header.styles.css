@@ -189,7 +189,19 @@
     --main-title-circle-right: -30px;
   }
   .header-container {
-    height: 90vh;
+    height: 100vh;
+  }
+
+  .socials-container {
+    position: absolute;
+    top: 80%;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    flex-direction: row;
+  }
+  .socials-container > * {
+    margin: 5px;
   }
 }
 
@@ -207,7 +219,7 @@
   }
 
   .header-container {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
@@ -222,16 +234,5 @@
   }
   .header-container {
     height: 100vh;
-  }
-  .socials-container {
-    position: absolute;
-    top: 80%;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    flex-direction: row;
-  }
-  .socials-container > * {
-    margin: 5px;
   }
 }

@@ -4,7 +4,7 @@ const images = [
     title: 'Saber',
     desp: 'A saber mode and render in blender',
     image: 'images/works/saber.png',
-    externalLink: '',
+    externalLink: 'images/works/saber.png',
   },
 
   {
@@ -19,7 +19,7 @@ const images = [
     title: 'En notes',
     desp: 'A basic note app',
     image: 'images/works/en_notes.png',
-    externalLink: 'https://github.com/rishavmngo/en-note-app',
+    externalLink: 'https://vermillion-gumdrop-e86915.netlify.app',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const images = [
     title: 'Crwn Clothing',
     desp: 'A E commerce web app',
     image: 'images/works/crwn_clothing.png',
-    externalLink: 'https://github.com/rishavmngo/dirf',
+    externalLink: 'https://effervescent-smakager-9cb66d.netlify.app/',
   },
 
   {
@@ -48,7 +48,7 @@ const images = [
     title: 'Varsity',
     desp: 'A clone of the zerodha varsity',
     image: 'images/works/varsity.png',
-    externalLink: 'https://github.com/rishavmngo/varsity-clone',
+    externalLink: 'https://frabjous-clafoutis-af2e50.netlify.app/',
   },
   {
     id: 8,

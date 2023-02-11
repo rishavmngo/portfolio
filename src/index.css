@@ -29,3 +29,7 @@ body {
 .highlight {
   color: var(--main-orange-color) !important;
 }
+*::selection {
+  background: #b8765055;
+  color: white;
+}
